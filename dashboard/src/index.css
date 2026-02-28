@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.card {
+  @apply bg-slate-800 rounded-xl border border-slate-700 p-5 shadow-lg;
+}
+
+.stat-value {
+  @apply text-2xl font-bold text-white;
+}
+
+.stat-label {
+  @apply text-xs text-slate-400 uppercase tracking-wider;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-green { @apply bg-green-900 text-green-300; }
+.badge-yellow { @apply bg-yellow-900 text-yellow-300; }
+.badge-red { @apply bg-red-900 text-red-300; }
+.badge-blue { @apply bg-blue-900 text-blue-300; }
